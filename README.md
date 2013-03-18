@@ -1,6 +1,6 @@
 ## AngularJS Facebook Service
 
-  a simple service to abstract the process of posting to a user's Facebook feed. the service
+  a simple service to simplify the process of posting to a user's Facebook feed. the service
   checks the user's FB login state, then acts accordingly, either proceeding to show the 
   Facebook UI feed post pop-up, or prompting the user to enter FB creds.
                          
