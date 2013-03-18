@@ -1,6 +1,6 @@
 'use strict'
 
-Application.Services.factory('facebookService', ['$rootScope', '$q', '$log','configuration', 'facebookLibService', function ($rootScope, $q, $log, configuration, facebookLibService) {
+Application.Services.factory('facebookService', ['$rootScope', '$q', 'facebookLibService', function ($rootScope, $q, facebookLibService) {
 
     var login,
         ensureUserLoggedIn,
@@ -118,10 +118,6 @@ Application.Services.factory('facebookService', ['$rootScope', '$q', '$log','con
             );
 
             return deferred.promise;
-        },
-
-        postToFacebook : postToFacebook,
-        ensureUserLoggedIn : ensureUserLoggedIn,
-        login : login
+        }
     }
 }]);
