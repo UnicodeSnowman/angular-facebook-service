@@ -14,7 +14,7 @@ Application.Services.factory('facebookService', ['$rootScope', '$q', 'facebookLi
         cookie: true
     });
 
-    login = function (promise) {
+    login = function () {
 
         var deferred = $q.defer();
 
